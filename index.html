@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery Get Width and Height of an Element</title>
+<style type="text/css">
+    #box{
+        width: 400px;
+        height: 596px;
+        padding: 25px;
+        text-align: justify;
+        border: 10px solid #c6b51a;
+        margin: auto;
+        background-image:url('images/giphy (1).gif');
+        background-repeat:no-repeat;
+        background-clip: content-box;
+        color:white;
+    } 
+    
+     
+</style>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("button").click(function(){
+        // var divWidth = $("#box").width();
+        // var divHeight = $("#box").height();
+
+
+        // var divWidth = $("#box").innerWidth();
+        // var divHeight = $("#box").innerHeight();
+
+        // var divWidth = $("#box").outerWidth();
+        // var divHeight = $("#box").outerHeight();
+
+
+       
+        $("#box").width(800).height(900);
+
+
+
+        $("#result").html("Width: " + divWidth + ", " + "Height: " + divHeight);
+
+        
+
+    });
+});
+</script>
+</head>
+<body>
+    <div id="box">
+    </div>
+    <button type="button">Get Width and Height</button>
+    <p id="result"></p>
+</body>
+</html>                            
